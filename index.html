@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+     
+   
+   <header class="header">
+    <img src="logo.png" alt="Logo">
+        <nav class="navbar">
+            <a href="sch.html">Home</a>
+            <a href="ser.html" target="_blank">Service</a>
+            <a href="abt.html" target="_blank">About</a>
+            <a href="index.html">Blog</a>
+            <a href="logs.html" target="_blank">Contact Us</a>
+        </nav>
+        
+        <!-- Clock Display -->
+        <div id="time"></div>
+   </header>
+
+<main id="maan">
+    <section id="hdd">
+        <h1>Best Education For Diploma</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui perspiciatis, eveniet sequi labore <br> vel itaque adipisci odio necessitatibus
+             voluptatibus saepe. <br> Get Started Now View Courses
+        </p>
+    </section>
+</main>
+
+<section class="features">
+    <div class="feature-item">
+        <div class="icon">
+            <i class="fas fa-chalkboard-teacher"></i> 
+        </div>
+        <h3>Professional Teachers</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+    </div>
+    
+    <div class="feature-item">
+        <div class="icon">
+            <i class="fas fa-globe"></i> 
+        </div>
+        <h3>Learn Anywhere Online</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+    </div>
+    
+    <div class="feature-item">
+        <div class="icon">
+            <i class="fas fa-graduation-cap"></i> 
+        </div>
+        <h3>Graduation Certificate</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+    </div>
+    
+    <div class="feature-item">
+        <div class="icon">
+            <i class="fas fa-award"></i> 
+        </div>
+        <h3>Over 1000 Scholarship</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+    </div>
+</section>
+
+
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+<section class="bg-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="heading">
+                    <h2>Featured courses</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime totam quo, ducimus aliquid quisquam minima perspiciatis repellendus, minus tenetur reiciendis quis? Consequatur perferendis deleniti, rerum delectus consectetur modi praesentium deserunt.</p>
+                </div>
+            <!-- </div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<div class="featured-box">
+    <div class="feature-card">
+        <a href="#"><i class="far fa-link"></i></a>
+        <img src="mba.webp" alt="MBA Course Image">
+    </div>
+    <div class="content">
+        <h3>MBA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor</p>
+        <ol>
+            <li>3 Year Course</li>
+            <li>100 Classes</li>
+            <li>10 am - 1 pm</li>
+        </ol>
+    </div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<div class="featured-box">
+    <div class="feature-card">
+        <a href="#"><i class="far fa-link"></i></a>
+        <img src="be.webp" alt="BE Course Image">
+    </div>
+    <div class="content">
+        <h3>BE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor</p>
+        <ol>
+            <li>3 Year Course</li>
+            <li>100 Classes</li>
+            <li>10 am - 1 pm</li>
+        </ol>
+    </div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<div class="featured-box">
+    <div class="feature-card">
+        <a href="#"><i class="far fa-link"></i></a>
+        <img src="me.webp" alt="ME Course Image">
+    </div>
+    <div class="content">
+        <h3>ME</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor</p>
+        <ol>
+            <li>3 Year Course</li>
+            <li>100 Classes</li>
+            <li>10 am - 1 pm</li>
+        </ol>
+    </div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<div class="featured-box">
+    <div class="feature-card">
+        <a href="#"><i class="far fa-link"></i></a>
+        <img src="mbbs.webp" alt="MBBS Course Image">
+    </div>
+    <div class="content">
+        <h3>MBBS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor</p>
+        <ol>
+            <li>3 Year Course</li>
+            <li>100 Classes</li>
+            <li>10 am - 1 pm</li>
+        </ol>
+    </div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<div class="featured-box">
+    <div class="feature-card">
+        <a href="#"><i class="far fa-link"></i></a>
+        <img src="msc.webp" alt="MSC Course Image">
+    </div>
+    <div class="content">
+        <h3>MSC</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor</p>
+        <ol>
+            <li>3 Year Course</li>
+            <li>100 Classes</li>
+            <li>10 am - 1 pm</li>
+        </ol>
+    </div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<div class="featured-box">
+    <div class="feature-card">
+        <a href="#"><i class="far fa-link"></i></a>
+        <img src="ma.webp" alt="MA Course Image">
+    </div>
+    <div class="content">
+        <h3>MA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor</p>
+        <ol>
+            <li>3 Year Course</li>
+            <li>100 Classes</li>
+            <li>10 am - 1 pm</li>
+        </ol>
+    </div>
+</div>
+</div>
+<section class="years">
+
+</section>
+
+</body>
+</html> -->
